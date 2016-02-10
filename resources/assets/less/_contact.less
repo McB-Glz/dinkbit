@@ -1,0 +1,108 @@
+.mapa{
+	position: relative;
+}
+
+#googlemaps { 
+  height: 500px; 
+  width: 100%; 
+  left: 0; 
+  z-index: 0;
+  @media (max-width: @screen-xs-max) {
+  	height: 300px;
+  } 
+}
+
+.mapa-title{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+
+	h2{
+		text-align: center;
+		color: white;
+		margin-top: 202px;
+		font-size: 48px !important;
+		@media (max-width: @screen-xs-max) {
+			margin-top: 130px;
+		} 
+	}
+}
+
+.contacto{
+	.media{
+		color: @mainBlue;
+		margin-bottom: 20px;
+		font-weight: 300;
+
+		a{
+			&:hover{
+				color: #444444;
+				text-decoration: none;
+			}
+		}
+	}
+
+	address{
+		margin-bottom: 0;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.border-bottom{
+		padding-bottom: 15px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #444444;
+	}
+}
+
+.contact-form{
+	
+	h2{
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
+
+	#formSuccess, #formFail{
+		display: none;
+	}
+
+	.row{
+		margin: 0;
+
+		div{
+			padding: 0;
+		}
+	}
+
+	input{
+		background: #f6f6f6;
+		border-radius: 0;
+		height: 50px;
+	}
+
+	textarea{
+		background: #f6f6f6;
+		border-radius: 0;
+	}
+
+	.btn-primary{
+		background: @mainBlue;
+		border-radius: 0;
+		padding: 15px 60px;
+	}
+
+	.pp{
+		clear: both;
+		float: right;
+		text-align: right;
+		font-size: 12px;
+		font-weight: 300;
+		margin-top: 15px;
+	}
+
+}

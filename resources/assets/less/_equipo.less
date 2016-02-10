@@ -1,0 +1,147 @@
+.equipo{
+	.section-header{
+		background-color: #cdcdcd;
+		background-image: url('../img/oficina02.jpg');
+		background-repeat: no-repeat;
+		background-position: 50% 65%;
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #231F20;
+			opacity: 0.2;
+		}
+		h2{
+			position: relative;
+			@media (max-width: @screen-tablet) {
+				margin-top: 115px !important;
+			}
+		}
+	}
+}
+
+#equipo-grid{
+	.row{
+		
+	}
+
+	.team-single{
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+	.team-top{
+		border-bottom: 1px solid #282828;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.img-wrapper{
+		position: relative;
+		cursor: pointer;
+
+		&:hover, &.hover{
+
+			+ .team-info{
+				top: 0;
+			}
+		}
+	}
+
+	.team-info{
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		float: left;
+		width: 100%;
+		height: 100%;
+		top: 100%;
+		border-bottom: 8px solid @mainBlue;
+		padding: 15px;
+		color: white;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		display: block;
+		@media (min-width: @screen-tablet) and (max-width: @screen-tablet) {
+			overflow: scroll;
+		}
+
+		@media (min-width: @screen-lg-min) {
+			padding: 25px;
+		}
+
+		&:hover, &.hover{
+			top: 0;
+		}
+
+		.h2{
+			margin: 0 0 15px 0;
+			font-size: 28px;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size: 24px;
+			}
+
+			@media (max-width: @screen-tablet) {
+				font-size: 20px;
+				margin-bottom: 8px;
+			}
+
+			@media (min-width: 992px) and (max-width: 1024px) {
+				font-size: 24px;
+			}
+		}
+
+		p{
+			line-height: 1.5;
+			margin-bottom: 10px;
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+
+			@media (max-width: @screen-tablet) {
+				font-size: 13px;
+				margin-bottom: 5px;
+				line-height: 1.3;
+			}
+
+			@media (min-width: 992px) and (max-width: 1024px) {
+				font-size: 14px;
+				margin-bottom: 5px;
+				line-height: 1.3;
+			}
+		}
+
+		blockquote{
+			padding-top: 5px;
+
+			p{
+				margin-bottom: 5px;
+				font-size: 0.8em;
+				
+				@media (max-width: @screen-tablet) {
+					font-size: 0.7em;
+				}
+
+				@media (min-width: 992px) and (max-width: 1024px) {
+					font-size: 0.75em;
+				}
+			}
+		}
+
+		small{
+			color: #cdcdcd;
+
+			@media (max-width: @screen-tablet) {
+					font-size: 0.7em;
+				}
+		}
+	}
+
+	.desc{
+		position: relative;
+		clear: both;
+	}
+}
